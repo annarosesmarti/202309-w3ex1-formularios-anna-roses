@@ -12,21 +12,26 @@
 
 <body>
   <h1 class="title">Página de registro</h1>
-  <form>
-    <label for="username">Nombre de usuario</label><input id="username" type="text">
-    <label for="emial">eMail</label><input id="email" type="email">
-    <label for="password">Contraseña</label><input id="password" type="password">
-    <label for="phone">Número de teléfono</label><input id="phone" type="tel">
-    <label for="birthdate">Fecha de nacimiento</label><input id="birthdate" type="date">
-    <label for="gender">Gender</label>
-    <select id="gender">
+  <form class="parent-container">
+    <label class="item" for="username">Nombre de usuario</label><input class="input" id="username" type="text">
+    <label class="item" for="emial">Correo electrónico</label><input class="input" id="email" type="email">
+    <label class="item" for="password">Contraseña</label><input class="input" id="password" type="password">
+    <label class="item" for="phone">Número de teléfono</label><input class="input" id="phone" type="tel">
+    <label class="item" for="birthdate">Fecha de nacimiento</label><input class="input" id="birthdate" type="date">
+    <label class="item" for="gender">Gender</label>
+    <select class="input" id="gender">
       <option value="">Elige el género</option>
       <option value="Male">Hombre</option>
       <option value="Female">Mujer</option>
       <option value="Other">Otros</option>
       <option value="rather-not-say">Prefiero no decirlo</option>
     </select>
-    <label for="checkbox">Términos y condiciones</label><input id="checkbox" type="checkbox" </form>
+    <section class="terms">
+      <input id="checkbox" type="checkbox">
+      <label for="checkbox">Términos y
+        condiciones</label>
+    </section>
+  </form>
 
 </body>
 
