@@ -1,23 +1,30 @@
 :root {
- --main-color: #57577a
- --main-font: arial
+  --main-color: black;
+  --secondary-color: #085979;
+  --tertiary-color: #64babe;
+  --main-font: arial;
+  --main-font-size: 1erm;
 }
 
 *,
-::before, 
-::after{
-box-sizing: border-box;
+::before,
+::after {
+  box-sizing: border-box;
 }
 
 body,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p {
   margin: 0px;
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-size: var(--main-font-size);
+}
+
+.title {
+  font-size: 2rem;
 }
 
 ul {
